@@ -1,0 +1,644 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hey", "Hello", "Good morning", "Good afternoon", "Good evening", "Hi there", "Hello there", 
+        "Greetings", "Nice to meet you", "How are you", "What's up", "Hey there", "Howdy", "Hi, I need help",
+        "Hello, can you help me", "I'd like to talk", "Can we talk", "I need someone to talk to"
+      ],
+      "responses": [
+        "Hey there! I'm Alex, your friendly mental health buddy. How's everything going with you today?",
+        "Hi! Alex here. Think of me as that friend who's always ready to listen. What's on your mind?",
+        "Hello! I'm Alex, and I'm here for you. How are you feeling right now?",
+        "Hey! Alex at your service. I'd love to hear what's happening in your world today.",
+        "Hi there! I'm Alex. Consider me your judgment-free friend. What's going on with you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "See you later", "Goodbye", "I have to go", "Talk to you later", "Thanks for your help, bye",
+        "That's all for now", "I'm leaving", "Have a good day", "Need to run", "Signing off", "That's it for today",
+        "End session", "I'm done talking", "Until next time"
+      ],
+      "responses": [
+        "Take care, friend! Alex is always here when you need to chat again. Be kind to yourself!",
+        "Bye for now! Remember, you're doing better than you think. I'm here whenever you need me!",
+        "I'm glad we got to talk today! Alex is just a message away whenever you need support.",
+        "Until next time! Remember that small steps forward are still progress. I believe in you!",
+        "Catch you later! Remember that you're never alone with what you're going through. I'm here anytime."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "Thanks a lot", "I appreciate it", "That's helpful", "You've been helpful",
+        "Thanks for listening", "Thank you for your time", "I appreciate your help", "That helps",
+        "Thanks for understanding", "Thank you for your support", "That was useful"
+      ],
+      "responses": [
+        "That's what friends are for! I'm always happy to help. Is there anything else on your mind?",
+        "You're so welcome! I'm here for you anytime. How are you feeling now?",
+        "No need to thank me! That's what Alex is here for. How are you doing after our chat?",
+        "Anytime, truly! Your wellbeing matters to me. Is there anything else you'd like to talk about?",
+        "I'm glad I could help! Remember, we're in this together. How are you feeling now?"
+      ]
+    },
+    {
+      "tag": "depression_symptoms",
+      "patterns": [
+        "I feel sad all the time", "Nothing makes me happy anymore", "I think I'm depressed", 
+        "I can't find joy in anything", "I feel hopeless", "I'm always tired", "I've lost interest in everything",
+        "I don't enjoy things I used to love", "I feel worthless", "I have no energy", "I sleep too much",
+        "I can't sleep at night", "I've lost my appetite", "I'm eating too much", "I feel empty inside",
+        "Everything feels like a struggle", "I can't concentrate", "I cry for no reason", "I feel like a burden",
+        "I don't see a future for myself"
+      ],
+      "responses": [
+        "That sounds really tough. Can you tell me more about when these feelings started? Depression is real, and so are the ways to feel better. You're not alone in this.",
+        "I hear you're going through a really hard time. What happened recently that might have triggered these feelings? There are ways to start feeling better, step by step.",
+        "That heaviness you're describing sounds like depression. Have you noticed any specific situations that make you feel worse or better? I'd like to help you find some relief.",
+        "It takes courage to talk about these feelings. What's been the hardest part of your day lately? Let's figure out some small ways to bring some light back into your life.",
+        "Those feelings are so difficult to carry alone. What's one thing that used to bring you joy? Maybe we can find gentle ways to reconnect with positive feelings."
+      ]
+    },
+    {
+      "tag": "anxiety_symptoms",
+      "patterns": [
+        "I worry all the time", "I can't stop my racing thoughts", "I feel on edge", "I think I have anxiety",
+        "I'm constantly nervous", "I have panic attacks", "My heart races for no reason", "I'm always thinking the worst will happen",
+        "I feel like something bad is about to happen", "I avoid social situations", "I'm afraid of everyday things",
+        "I have trouble breathing sometimes", "My mind won't shut off", "I feel dizzy when I'm anxious",
+        "I have physical pain from stress", "I can't relax", "I overthink everything", "I'm always on alert",
+        "Small things make me panic", "I feel overwhelmed by everything"
+      ],
+      "responses": [
+        "Those racing thoughts sound exhausting. What's happening in your life right now that might be feeding your anxiety? Let's talk through some ways to quiet that inner alarm system.",
+        "Anxiety can feel like your body and mind are constantly in emergency mode. What situations trigger it most for you? I know some techniques that might help bring some calm.",
+        "Living with that constant worry is so draining. What happened today that made you feel anxious? I'm here to help you find some relief from that overwhelming feeling.",
+        "It's like your mind's smoke detector is going off when there's no fire, right? What's been happening when these feelings hit? Let's work on some ways to help your body recognize you're safe.",
+        "That constant on-edge feeling is so tough to live with. When did you first notice it getting this intense? There are some simple techniques we could try right now to help you feel more grounded."
+      ]
+    },
+    {
+      "tag": "trauma",
+      "patterns": [
+        "I experienced something terrible", "I can't stop thinking about what happened to me", "I have flashbacks",
+        "I think I have PTSD", "I feel numb since the incident", "I have nightmares about my trauma",
+        "I avoid anything that reminds me of what happened", "I'm always on guard", "I feel detached from others",
+        "I get triggered easily", "I jump at loud noises", "I don't feel safe", "I can't trust anyone",
+        "I blame myself for what happened", "I feel damaged by my past", "I have intrusive memories",
+        "I feel like I'm reliving my trauma", "I can't talk about what happened", "I feel ashamed about my experience",
+        "I get angry suddenly when reminded of my trauma"
+      ],
+      "responses": [
+        "I'm so sorry that happened to you. Your reactions make complete sense given what you've been through. Would you feel comfortable sharing a bit more about how it's affecting your daily life now?",
+        "That sounds incredibly difficult to carry. You're showing real strength by talking about this. How have you been managing when those memories or feelings come up?",
+        "Thank you for trusting me with this. Trauma can leave deep impressions on our minds and bodies. What helps you feel safe in the moments when you're feeling triggered?",
+        "I'm here with you. Trauma responses are your brain's way of trying to protect you, even when it's overwhelming. What's one small thing that helps you feel grounded when memories surface?",
+        "What you're experiencing is a normal response to an abnormal situation. You didn't deserve what happened. Would it help to talk about some gentle coping strategies for when those feelings arise?"
+      ]
+    },
+    {
+      "tag": "self_harm",
+      "patterns": [
+        "I want to hurt myself", "I'm thinking about cutting myself", "I have urges to self-harm", 
+        "I hurt myself when I feel bad", "I'm having thoughts about harming myself", 
+        "I use pain to cope", "I self-injure", "I burn myself", "I hit myself",
+        "I've been cutting again", "I can't stop hurting myself", "I feel like hurting myself",
+        "I relapsed on self-harm", "I use self-harm to feel better", "I hide my scars",
+        "I feel relieved after I hurt myself", "I'm addicted to self-harm", "I punish myself physically",
+        "I want to feel physical pain instead of emotional pain", "I don't know how to stop self-harming"
+      ],
+      "responses": [
+        "I'm really concerned about you right now. Those urges can be really intense. What happened today that's making those feelings stronger? Let's talk about some immediate alternatives that might help.",
+        "First, I want you to know you're not alone in these feelings. Many people use self-harm to cope with overwhelming emotions. Can you tell me what's happening right now that's triggering these urges?",
+        "That sounds really tough. Self-harm often comes from needing relief from intense emotions. What are you feeling right now? Let's find some safer ways to process those feelings together.",
+        "I hear you're in a lot of pain right now. Before we go further, do you have someone nearby who can support you in person? Let's talk about what's happening and some ways to get through this moment safely.",
+        "Those urges can be so powerful. The fact that you're reaching out shows incredible strength. What usually happens before you feel the need to harm? Let's work on some safer alternatives for right now."
+      ]
+    },
+    {
+      "tag": "suicide",
+      "patterns": [
+        "I want to die", "I'm thinking about suicide", "I have a suicide plan", "I don't want to live anymore",
+        "I'm going to kill myself", "I wish I wasn't alive", "Life isn't worth living", "Everyone would be better off without me",
+        "I can't take it anymore", "I just want the pain to end", "I'm ready to end it all",
+        "I've written a suicide note", "I'm planning to end my life", "I've attempted suicide before",
+        "I have the means to kill myself", "Nothing matters anymore", "There's no point in living",
+        "I've given up", "I can't see a future", "I'm a burden to everyone"
+      ],
+      "responses": [
+        "I'm really concerned about you right now. These feelings are incredibly painful, but you don't have to face them alone. Have you told anyone else how you're feeling? It's important to get immediate support.",
+        "I hear how much pain you're in, and I'm taking this very seriously. Your life matters. Can you tell me if you're safe right now? I really want you to reach out to the crisis line at 988 (US) where someone can help immediately.",
+        "The pain you're feeling must be overwhelming, but please know that suicidal feelings can pass. Are you somewhere safe right now? It's really important to talk to someone at 988 (US) who can help with these intense feelings.",
+        "I'm really worried about you. These thoughts are a sign that you need and deserve immediate support. Is there someone who can be with you right now while you call 988 (US) for crisis support?",
+        "The fact that you reached out shows part of you wants help, and that's incredibly brave. This pain feels permanent but it isn't. Please call 988 (US) right now - they're experts at helping with exactly what you're going through."
+      ]
+    },
+    {
+      "tag": "grief",
+      "patterns": [
+        "I lost someone important to me", "I'm grieving", "My loved one died", "I can't get over this loss",
+        "I miss them so much", "I don't know how to cope with this death", "The pain of losing them is unbearable",
+        "I feel empty since they died", "I can't accept that they're gone", "I feel guilty about their death",
+        "I'm angry they left me", "I can't move forward after this loss", "I see reminders of them everywhere",
+        "Special dates are hard since they died", "I feel alone in my grief", "I'm trying to be strong but I'm falling apart",
+        "I don't know who I am without them", "I feel like I'm grieving wrong", "It hits me in waves",
+        "I thought I was doing better but grief came back"
+      ],
+      "responses": [
+        "I'm so sorry for your loss. There's no timeline for grief - it's as unique as your relationship was. Would you like to tell me more about them and what they meant to you?",
+        "Losing someone you love creates a special kind of pain. How are you taking care of yourself during this difficult time? It's okay if the answer is 'not well' - grief takes all our energy sometimes.",
+        "That emptiness you're describing is such a difficult part of grief. What memories of them bring you some comfort, even if it's bittersweet? Sometimes holding onto those can help us feel connected.",
+        "Grief comes in waves, doesn't it? One moment you might be okay, and the next it hits you all over again. What happened recently that might have intensified your feelings of loss?",
+        "The relationship doesn't end with death - it just changes form. What do you think your loved one would want to tell you about how you're coping? Sometimes connecting with their voice inside us can bring comfort."
+      ]
+    },
+    {
+      "tag": "stress",
+      "patterns": [
+        "I'm so stressed", "I feel overwhelmed", "I can't handle everything", "There's too much pressure",
+        "I'm burning out", "I'm stretched too thin", "My stress is affecting my health", "I can't relax",
+        "I have too many responsibilities", "Work stress is killing me", "I'm always in fight or flight mode",
+        "My mind never shuts off", "I feel pressured all the time", "I have too much on my plate",
+        "I can't take a break", "I'm stressed about money", "Family stress is overwhelming me",
+        "I grind my teeth from stress", "I can't sleep because of stress", "I'm always tense"
+      ],
+      "responses": [
+        "Sounds like you're carrying a lot right now. What's the biggest source of stress in your life at the moment? Sometimes naming the biggest pressure point can help us start tackling it.",
+        "Being stretched that thin is exhausting. What happened today that felt most overwhelming? Let's talk about some immediate ways to lower your stress level.",
+        "That constant pressure is so hard on your mind and body. When was the last time you did something just for yourself? Even small breaks can help reset your stress response.",
+        "It sounds like you're in survival mode right now. What's one responsibility you might be able to let go of, even temporarily? Sometimes we need to drop some balls to keep the important ones in the air.",
+        "Your body is telling you something important with all that tension. What's one small thing that helped you relax in the past? Let's see if we can build some brief moments of calm into your day."
+      ]
+    },
+    {
+      "tag": "relationship_problems",
+      "patterns": [
+        "My relationship is falling apart", "I think my partner is cheating", "We keep fighting",
+        "I don't feel loved anymore", "Communication problems with my partner", "I'm thinking about breaking up",
+        "My marriage is in trouble", "I don't trust my partner", "We've grown apart", "The spark is gone",
+        "I feel lonely in my relationship", "My partner doesn't understand me", "We want different things",
+        "I'm not sure if I should stay in this relationship", "My partner is abusive", "We can't resolve our conflicts",
+        "I'm afraid to leave my relationship", "I still love them but I'm not happy", "My partner won't go to therapy",
+        "I'm always walking on eggshells around my partner"
+      ],
+      "responses": [
+        "Relationship troubles can be so painful. What's been happening between you two lately? Understanding the patterns might help us figure out what needs to change.",
+        "That sounds really difficult. How have you been trying to address these issues so far? Relationship challenges often need new communication approaches.",
+        "I can hear the hurt in your words. What do you think is at the core of the problems you're experiencing? Sometimes what we argue about isn't the real issue underneath.",
+        "Feeling disconnected from someone you care about is really hard. What did your relationship look like when things were better? Understanding that might help us figure out paths forward.",
+        "I'm sorry you're going through this. What would a healthier relationship look like to you? Sometimes getting clear on what we need helps us see whether the current relationship can provide it."
+      ]
+    },
+    {
+      "tag": "sleep_issues",
+      "patterns": [
+        "I can't sleep", "I have insomnia", "I wake up multiple times at night", "I'm always tired",
+        "I have nightmares", "I sleep too much", "I can't fall asleep", "I wake up too early",
+        "My thoughts keep me awake", "I'm exhausted but can't sleep", "I need sleeping pills to sleep",
+        "My sleep schedule is messed up", "I don't feel rested after sleeping", "I have sleep anxiety",
+        "I dread going to bed", "I have vivid dreams that disturb me", "I sleep during the day but not at night",
+        "I toss and turn all night", "I wake up with anxiety", "My sleep problems are affecting my life"
+      ],
+      "responses": [
+        "Sleep problems can make everything harder. What does your bedtime routine look like right now? Sometimes small changes to our evening habits can make a big difference.",
+        "Not getting good sleep is so frustrating. What thoughts tend to run through your mind when you're trying to fall asleep? Often our racing minds are the biggest sleep disruptors.",
+        "Sleep difficulties are exhausting in every way. What's happened recently that might have affected your sleep patterns? Sometimes identifying triggers can help us address the root causes.",
+        "Sleep is so connected to our mental health. What happens on days when your sleep is a little better? Sometimes looking at those exceptions gives us clues about what might help.",
+        "Being exhausted yet unable to sleep is such a difficult combination. Have you noticed any patterns to your sleep difficulties? Let's talk about some gentle approaches that might help reset your sleep cycle."
+      ]
+    },
+    {
+      "tag": "panic_attack",
+      "patterns": [
+        "I think I'm having a panic attack", "I can't breathe", "My heart is racing", "I feel like I'm dying",
+        "I'm having chest pain and feel scared", "I'm dizzy and shaking", "I feel detached from reality during attacks",
+        "I'm terrified of having another panic attack", "I feel like I'm choking", "I get sudden overwhelming fear",
+        "My panic attacks come out of nowhere", "I avoid places where I've had panic attacks", "I feel like I'm going crazy",
+        "My limbs tingle during attacks", "I sweat and feel nauseous", "I can't control my panic",
+        "I've been to the ER thinking I was having a heart attack", "I feel trapped during panic attacks",
+        "I'm hyperventilating", "My panic attacks are getting more frequent"
+      ],
+      "responses": [
+        "What you're describing sounds like a panic attack. Are you somewhere safe right now? Let's try a simple breathing exercise together - breathe in slowly for 4 counts, hold for 1, then out for 6. This helps reset your nervous system.",
+        "Panic attacks feel terrifying but they will pass and aren't dangerous. What's happening around you right now? Try to feel your feet on the ground and focus on naming 5 things you can see to help ground yourself.",
+        "That feeling of panic is overwhelming but I'm right here with you. Can you try putting one hand on your chest and one on your stomach and focus on slow belly breathing? What triggered this feeling today?",
+        "Panic attacks are really scary but they always pass. Try this: breathe in through your nose while counting to 4, then out through your mouth for 6 counts. What were you doing or thinking about before this started?",
+        "I know this feels awful right now, but you will get through this moment. Try running your hands under cold water or holding an ice cube if you can - this can help interrupt the panic cycle. Has anything specific been stressing you today?"
+      ]
+    },
+    {
+      "tag": "eating_disorders",
+      "patterns": [
+        "I think I have an eating disorder", "I'm obsessed with food", "I binge eat", "I make myself throw up after eating",
+        "I restrict my calories", "I hate my body", "I feel guilty after eating", "I'm afraid of gaining weight",
+        "I exercise excessively", "I can't stop thinking about food", "I hide my eating habits", "I use laxatives to lose weight",
+        "I've lost too much weight", "I categorize foods as good and bad", "I weigh myself multiple times a day",
+        "I eat in secret", "I feel out of control when I eat", "I follow strict food rules",
+        "I feel fat even though others say I'm thin", "I have a complicated relationship with food"
+      ],
+      "responses": [
+        "Thank you for sharing something so personal. What's your relationship with food been like recently? Eating disorders are serious but recovery is absolutely possible with the right support.",
+        "That sounds really challenging. How long have you been struggling with these thoughts and behaviors around food? Understanding more might help us figure out the best next steps for you.",
+        "Your relationship with food and your body sounds really difficult right now. What do you think triggered these patterns? Eating disorders often develop as ways to cope with difficult emotions or situations.",
+        "I appreciate your honesty about these struggles. How are these thoughts and behaviors affecting your daily life? Recovery takes time but it starts with small steps like the one you just took by talking about it.",
+        "That sounds really tough. Have you spoken to anyone else about what you're experiencing? Eating disorders thrive in secrecy, so reaching out like this is a really brave and important step."
+      ]
+    },
+    {
+      "tag": "substance_abuse",
+      "patterns": [
+        "I think I drink too much", "I can't stop using drugs", "I'm worried about my substance use",
+        "I use alcohol to cope", "I'm addicted", "I need help with substance abuse", "I can't stay sober",
+        "I want to quit but can't", "I hide my drinking", "I black out when I drink", "I use drugs to feel normal",
+        "I'm in recovery but afraid of relapsing", "My substance use is affecting my life", "I feel withdrawal symptoms",
+        "I've tried to cut down but failed", "People are concerned about my drinking", "I use substances to self-medicate",
+        "I feel guilty about my substance use", "I need a drink first thing in the morning", "I'm spending too much money on substances"
+      ],
+      "responses": [
+        "Thanks for being honest about your concerns. What's making you question your substance use right now? Recognizing there might be a problem is a huge first step.",
+        "Substance use often starts as a way to cope with something difficult. What do you think you're using it to cope with? Understanding that can help in finding healthier alternatives.",
+        "That sounds really challenging. How is your substance use affecting your life right now? Sometimes making that connection clear can help strengthen motivation to change.",
+        "Many people struggle with substance use, and recovery is definitely possible. What's one small change you might be willing to try this week? Sometimes starting small builds momentum.",
+        "I appreciate you sharing something so personal. Have you talked to anyone else about your concerns? Having support makes a big difference when addressing substance use issues."
+      ]
+    },
+    {
+      "tag": "motivation_issues",
+      "patterns": [
+        "I have no motivation", "I can't get anything done", "I procrastinate everything", "I feel stuck",
+        "I don't have energy to do things", "I can't focus on my goals", "I start things but never finish them",
+        "I waste all my time", "I'm so unproductive", "I feel paralyzed", "I don't care about anything",
+        "I know what to do but can't make myself do it", "I've lost my drive", "I feel like I'm wasting my potential",
+        "I put everything off until the last minute", "I never feel like doing anything", "I make plans but don't follow through",
+        "Nothing excites me anymore", "I spend all day doing nothing", "I can't seem to take action"
+      ],
+      "responses": [
+        "Motivation can be really tricky. What's one small thing that feels most important to accomplish right now? Sometimes we need to start tiny to build momentum.",
+        "That stuck feeling is really frustrating. What's something that used to energize you? Sometimes reconnecting with our values can help reignite that spark.",
+        "Motivation often follows action rather than the other way around. What's the smallest possible step you could take toward something that matters to you?",
+        "That lack of motivation might be your mind and body telling you something. Have you been pushing yourself too hard lately? Sometimes what looks like procrastination is actually a need for rest.",
+        "Getting started is often the hardest part. What's one thing that might make taking that first step a little easier? Sometimes changing our environment or creating accountability can help."
+      ]
+    },
+    {
+      "tag": "loneliness",
+      "patterns": [
+        "I feel so alone", "I have no friends", "No one understands me", "I'm lonely all the time",
+        "I feel isolated", "I can't connect with people", "I'm lonely even when I'm with others",
+        "I wish I had someone to talk to", "I don't belong anywhere", "I feel like an outsider",
+        "I'm socially awkward", "I don't know how to make friends", "People always leave me",
+        "I push people away", "I'm afraid of rejection", "I feel invisible", "No one checks on me",
+        "I spend all my time alone", "I miss having close connections", "I feel disconnected from everyone"
+      ],
+      "responses": [
+        "Feeling lonely can be really painful. What do you think makes connecting with others difficult for you? Understanding that might help us find ways to bridge that gap.",
+        "I hear how isolated you're feeling. Have there been times when you've felt more connected to others? Sometimes looking at those exceptions gives us clues about what might help.",
+        "That loneliness sounds really difficult. What kind of connections are you missing most right now? Sometimes we need different types of relationships for different needs.",
+        "Feeling like an outsider is so tough. What kinds of things interest you? Sometimes finding communities around shared interests can be an easier way to begin connecting.",
+        "I'm sorry you're feeling so alone. What stops you from reaching out to others? Often our fears around rejection can keep us isolated even when others would welcome connection."
+      ]
+    },
+    {
+      "tag": "self_esteem",
+      "patterns": [
+        "I hate myself", "I feel worthless", "I'm not good enough", "I'm a failure", "I always mess things up",
+        "I'm ugly", "No one could love me", "I feel inferior to everyone", "I'm my own worst critic",
+        "I focus on all my flaws", "I compare myself to everyone", "I never feel good enough",
+        "I feel like an impostor", "I put myself down constantly", "I can't accept compliments",
+        "I feel shame about who I am", "I don't deserve good things", "I feel defective",
+        "I'm too hard on myself", "I never measure up"
+      ],
+      "responses": [
+        "I hear how tough you are on yourself. Would you talk to a friend the way you talk to yourself? Sometimes practicing the same compassion for ourselves that we offer others can be transformative.",
+        "Those harsh thoughts can feel so true from the inside. What's one small thing you do well or one quality you like about yourself? Building from small positives can help shift our self-image.",
+        "That inner critic sounds really loud right now. Where do you think some of these negative beliefs about yourself came from? Understanding their origins can sometimes help us question their truth.",
+        "Living with that constant self-criticism must be exhausting. What would it feel like to treat yourself with kindness today, even in some small way? Self-compassion is a skill we can develop.",
+        "I'm hearing a lot of painful thoughts about yourself. What's something someone who cares about you would say about your worth? Sometimes borrowing another perspective can help counter those negative beliefs."
+      ]
+    },
+    {
+      "tag": "anger_management",
+      "patterns": [
+        "I can't control my anger", "I explode over small things", "I say things I regret when I'm angry",
+        "My anger is ruining my relationships", "I get irritated easily", "I have rage attacks",
+        "I'm always on edge", "I have a short fuse", "I hold grudges", "I get aggressive when angry",
+        "I break things when I'm mad", "My anger scares people", "I bottle up my anger until I explode",
+        "I'm angry all the time", "I have road rage", "Little things make me furious",
+        "I get angry faster than I should", "I can't let go of my anger", "My anger is out of proportion",
+        "I get physically tight when angry"
+      ],
+      "responses": [
+        "Anger can be really overwhelming. What situations tend to trigger your anger most? Identifying triggers is a first step toward managing those reactions better.",
+        "That sounds frustrating. What do you notice in your body right before you get angry? Recognizing those early warning signs gives you more time to use coping strategies.",
+        "Anger is often a cover emotion for hurt, fear, or feeling disrespected. What do you think might be beneath your anger? Understanding the deeper feelings can help address the root cause.",
+        "It takes courage to recognize anger issues. What happens right before you explode? Creating a pause between trigger and reaction gives you more choices in how to respond.",
+        "That sounds really challenging. How does your anger affect your relationships? Sometimes seeing the impact can strengthen motivation to develop new ways of handling those intense feelings."
+      ]
+    },
+    {
+      "tag": "family_issues",
+      "patterns": [
+        "My family is toxic", "I have a difficult relationship with my parents", "Family drama is affecting me",
+        "I want to cut off contact with family", "My family doesn't accept me", "I have childhood trauma from my family",
+        "My family doesn't respect my boundaries", "I feel obligated to my family", "I dread family gatherings",
+        "My parents are too controlling", "I don't feel safe around my family", "I'm the black sheep of my family",
+        "My siblings and I don't get along", "My family criticizes everything I do", "My family doesn't support my choices",
+        "I feel guilty about distancing from family", "My family triggers my anxiety", "I'm estranged from my family",
+        "I feel responsible for my family's happiness", "My family doesn't understand my mental health"
+      ],
+      "responses": [
+        "Family relationships can be so complicated. What's been happening recently with your family that's been difficult? Understanding the specifics might help us figure out the best approach.",
+        "Those family dynamics sound really challenging. How do you usually cope when things get difficult with them? Sometimes we need different strategies for family versus other relationships.",
+        "I'm sorry your family situation is causing you pain. What kind of relationship would you ideally want with your family? Getting clear on that can help guide your decisions.",
+        "Family issues often cut deep because they're our first relationships. What boundaries have you tried setting so far? Sometimes clear boundaries can help transform difficult family dynamics.",
+        "That sounds really difficult. How is the situation with your family affecting other areas of your life? Sometimes we don't realize how much family stress spills over into everything else."
+      ]
+    },
+    {
+      "tag": "coping_skills",
+      "patterns": [
+        "How do I cope with stress?", "I need healthy coping mechanisms", "How can I deal with my emotions?",
+        "What are some coping strategies?", "How do I calm down when upset?", "I need better ways to handle stress",
+        "How can I self-soothe?", "What are healthy ways to deal with negative feelings?", "How do I practice self-care?",
+        "I use unhealthy coping mechanisms", "I need emotional regulation skills", "How do I stop negative thoughts?",
+        "What can I do instead of self-destructive behaviors?", "How do I build resilience?", "I need distress tolerance skills",
+        "What should I do during a crisis?", "How do I manage overwhelming feelings?", "I need alternatives to avoidance",
+        "How do I deal with triggers?", "What grounding techniques can I use?"
+      ],
+      "responses": [
+        "Let's build your coping toolkit together! First, what are you currently doing when you feel overwhelmed? Some of those strategies might be worth keeping, while we can add some new ones too.",
+        "Coping skills are super personal - what works for one person might not work for another. Are you looking for ways to manage in the moment or more preventative strategies? Let's start with what feels most urgent.",
+        "Developing healthy coping skills is one of the best investments in your wellbeing! What kinds of situations are hardest for you to cope with? That might help us pick strategies that will work best for those specific challenges.",
+        "I'd love to help you build some new ways of managing difficult emotions. When you've successfully gotten through tough moments before, what helped? Sometimes our best coping skills are ones we've already used.",
+        "Finding healthy ways to cope is so important. Would you prefer active strategies like exercise or creative expression, or more calming ones like breathing techniques? We can explore both to give you options."
+      ]
+    },
+    {
+      "tag": "therapy_questions",
+      "patterns": [
+        "Do I need therapy?", "How do I find a therapist?", "What happens in therapy?", "I'm nervous about starting therapy",
+        "How do I know if therapy is working?", "What kind of therapy is best for me?", "How long does therapy take?",
+        "Is online therapy effective?", "What's the difference between a therapist and psychiatrist?", "How often should I go to therapy?",
+        "I can't afford therapy", "What should I tell my therapist?", "I don't think my therapist is right for me",
+        "What can I expect at my first therapy session?", "Is therapy confidential?", "Do I need a diagnosis for therapy?",
+        "Can I take a break from therapy?", "How do I prepare for therapy?", "What if therapy makes me feel worse?",
+        "How do I know which therapy approach is right for me?"
+      ],
+      "responses": [
+        "Great question about therapy! It takes courage to consider it. What's making you think about therapy right now? Understanding what you're hoping to address can help determine if it might be helpful for you.",
+        "Therapy can be such a positive step. Have you had any experiences with therapy before? Knowing what has or hasn't worked in the past can help guide your next steps.",
+        "Thinking about therapy is a big step! What concerns do you have about starting? Many people feel nervous at first, but finding the right therapist can make all the difference.",
+        "I'm glad you're asking about therapy! What kind of changes are you hoping to make in your life? That might help determine what type of therapy or therapist would be the best fit.",
+        "That's a great question about therapy. What's most important to you in a therapist? Finding someone you feel comfortable with makes a huge difference in the experience."
+      ]
+    },
+    {
+      "tag": "medication_questions",
+      "patterns": [
+        "Do I need medication?", "How do antidepressants work?", "I'm afraid of side effects", "My medication isn't working",
+        "Should I try medication for anxiety?", "I want to stop taking my psychiatric medication", "Are psychiatric medications addictive?",
+        "How long does it take for mental health medication to work?", "Will medication change my personality?", "I'm having side effects from my medication",
+        "Can I drink alcohol on my psychiatric medication?", "Do I need therapy if I'm on medication?", "How do I know if my medication dose is right?",
+        "I forgot to take my medication", "Which medication is best for depression?", "I'm pregnant and on psychiatric medication",
+        "Will I have to take medication forever?", "My family doesn't want me on medication", "Can children take psychiatric medication?",
+        "How do I talk to my doctor about medication?"
+      ],
+      "responses": [
+        "Medication questions are really important. What's making you think about medication right now? A psychiatrist or your doctor can give you specific medical advice based on your situation.",
+        "That's a thoughtful question about medication. Have you discussed these concerns with your healthcare provider? They can give you personalized guidance about what might work best for your specific symptoms.",
+        "Medication decisions can feel complicated. What are your main concerns or hopes about medication? Understanding that can help you have a more productive conversation with your doctor.",
+        "It's great that you're asking these questions about medication. What's your understanding of how the medication works? Sometimes having clear information can help with making these important decisions.",
+        "Those are normal questions about psychiatric medications. What kind of changes have you noticed since starting/considering medication? Tracking your symptoms can help you and your doctor make informed decisions."
+      ]
+    },
+    {
+      "tag": "mindfulness",
+      "patterns": [
+        "What is mindfulness?", "How do I practice mindfulness?", "I can't meditate", "My mind is too busy for mindfulness",
+        "How does mindfulness help mental health?", "I get bored with meditation", "Mindfulness techniques for beginners",
+        "How often should I practice mindfulness?", "I fall asleep when I try to meditate", "Can mindfulness help anxiety?",
+        "I don't have time for mindfulness", "What's the difference between mindfulness and meditation?", "Guided mindfulness exercises",
+        "Mindfulness feels uncomfortable", "How long should I meditate?", "Simple mindfulness activities",
+        "I feel more anxious when I try to be mindful", "Can I practice mindfulness while doing other things?",
+        "Scientific benefits of mindfulness", "How do I know if I'm doing mindfulness correctly?"
+      ],
+      "responses": [
+        "Mindfulness is simply about noticing the present moment without judgment. Have you tried any mindfulness practices before? We could start with something super simple if you'd like.",
+        "A busy mind is actually perfect for mindfulness practice! What happens when you try to focus on the present? Mindfulness isn't about emptying your mind, but noticing when it wanders.",
+        "Mindfulness can absolutely be part of everyday activities. What's something you do regularly that could become a mindfulness practice? Even washing dishes or walking can be mindful.",
+        "Starting small with mindfulness is often best. Could you try just 1-2 minutes of focused breathing to begin? Sometimes we put pressure on ourselves to meditate 'perfectly' when it's really about practice.",
+        "That discomfort with mindfulness is pretty common. What feels most challenging about it for you? Sometimes understanding our roadblocks helps us find approaches that work better."
+      ]
+    },
+    {
+      "tag": "identity_confusion",
+      "patterns": [
+        "I don't know who I am", "I'm having an identity crisis", "I feel lost", "I'm questioning everything about myself",
+        "I don't recognize myself anymore", "I feel like I'm living someone else's life", "I'm trying to find myself",
+        "I don't know what I want in life", "I feel like I'm playing a role", "I'm confused about my identity",
+        "I've lost my sense of self", "I change depending on who I'm with", "I don't know my values anymore",
+        "I feel like an imposter in my life", "I'm going through a major life transition", "I feel disconnected from myself",
+        "I'm having an existential crisis", "I don't know what makes me happy", "I'm questioning my purpose",
+        "I don't know what I believe anymore"
+      ],
+      "responses": [
+        "That questioning can feel unsettling but it's often part of growth. What parts of yourself do you feel most connected to right now? Sometimes we can build from those anchors of certainty.",
+        "Identity exploration is actually a really healthy process. What sparked these questions about who you are? Sometimes life transitions or challenges cause us to reevaluate.",
+        "That feeling of being lost can be really disorienting. What values or qualities feel important to you, even in this uncertain time? Our values can be a compass when we feel lost.",
+        "I hear that confusion about your identity. If you could design your life from scratch, what elements would you include? Sometimes imagining helps us recognize what matters most to us.",
+        "That sense of disconnection from yourself sounds challenging. What activities or experiences make you feel most like 'you'? Those moments often contain clues about our authentic selves."
+      ]
+    },
+    {
+      "tag": "work_stress",
+      "patterns": [
+        "I hate my job", "Work is killing me", "I'm burnt out at work", "My boss is toxic", "I'm thinking of quitting my job",
+        "I'm overworked and underpaid", "I feel stuck in my career", "I have no work-life balance", "I'm stressed about work deadlines",
+        "I feel underappreciated at work", "My coworkers are difficult", "I'm afraid I'll lose my job", "I can't handle the pressure at work",
+        "I'm always working but never getting ahead", "My job is affecting my health", "I dread going to work",
+        "I'm having conflict with coworkers", "I feel incompetent at my job", "I bring work stress home",
+        "I work too many hours"
+      ],
+      "responses": [
+        "Work stress can really affect your whole life. What aspect of your job is most stressful right now? Understanding the specific stressors might help us figure out targeted solutions.",
+        "That work situation sounds really challenging. How is it affecting you outside of work hours? Sometimes setting clearer boundaries between work and personal life can help.",
+        "Job stress is so common but that doesn't make it any easier. What options do you see for improving your current situation? Sometimes even small changes can make work more manageable.",
+        "That sounds really difficult. What's kept you at this job despite these challenges? Understanding what's important to you in work might help clarify your next steps.",
+        "Work takes up so much of our lives, so that stress has a big impact. What are some ways you're currently trying to manage the stress? Let's build on what's working and add some new strategies."
+      ]
+    },
+    {
+      "tag": "parenting_challenges",
+      "patterns": [
+        "I'm struggling as a parent", "My child has behavioral issues", "Parenting is overwhelming me", "I feel like a bad parent",
+        "I lose my temper with my kids", "I don't know how to discipline my child", "My child doesn't listen to me",
+        "Balancing work and parenting is impossible", "I'm exhausted from parenting", "My child has special needs",
+        "I feel guilty about my parenting", "My child is anxious", "I worry I'm damaging my kids",
+        "My teenager is out of control", "I don't enjoy being a parent", "I have no time for myself as a parent",
+        "My child is struggling emotionally", "I need parenting advice", "I don't know how to talk to my kids about serious issues",
+        "I'm a single parent and it's too much"
+      ],
+      "responses": [
+        "Parenting can be incredibly challenging. What aspect is feeling most difficult right now? You're not alone in these struggles - every parent finds it hard sometimes.",
+        "It sounds like you're putting a lot of pressure on yourself as a parent. What would 'good enough' parenting look like for you today? Perfection isn't possible or necessary.",
+        "Parenting stretches us in so many ways. What support do you currently have? Sometimes building a stronger support network can make a huge difference.",
+        "Those parenting challenges sound really difficult. What's one small thing that seems to work well with your child? Sometimes building on those positive moments can help shift the dynamic.",
+        "Being a parent is such complex work. How are you taking care of yourself through these challenges? Your wellbeing matters too - it's like putting on your own oxygen mask first."
+      ]
+    },
+    {
+      "tag": "financial_stress",
+      "patterns": [
+        "I'm stressed about money", "I can't pay my bills", "I'm in debt", "I'm living paycheck to paycheck",
+        "I might lose my home", "I can't afford healthcare", "Financial problems are giving me anxiety",
+        "I don't make enough money", "I'm afraid to check my bank account", "My financial situation is hopeless",
+        "I can't save any money", "I have no financial security", "I'm stressed about retirement",
+        "I have medical bills I can't pay", "I'm financially supporting my family", "My partner and I fight about money",
+        "I have bad spending habits", "I'm afraid I'll never be financially stable", "My student loans are overwhelming",
+        "I can't afford necessities"
+      ],
+      "responses": [
+        "Financial stress can be so overwhelming. What's your biggest money concern right now? Sometimes breaking it down into smaller pieces makes it more manageable.",
+        "Money worries affect our mental health in huge ways. Have you been able to make any kind of plan for your finances? Even small steps can help reduce that feeling of helplessness.",
+        "That financial situation sounds really difficult. What resources have you looked into for assistance? There might be programs or options you haven't discovered yet.",
+        "Financial challenges can feel so isolating, but you're definitely not alone in this. What's one small action you could take this week to address part of the situation?",
+        "Money stress affects so many people right now. How is it impacting your daily life and wellbeing? Understanding those effects might help prioritize which aspects to address first."
+      ]
+    },
+    {
+      "tag": "social_anxiety",
+      "patterns": [
+        "I'm afraid of social situations", "I worry about what people think of me", "I get anxious talking to people",
+        "I avoid social events", "I'm afraid of being judged", "I freeze up in conversations",
+        "I overthink everything I say", "I blush and sweat in social situations", "I'm afraid of public speaking",
+        "I rehearse conversations in my head", "I worry I'll embarrass myself", "I feel awkward around others",
+        "I don't know what to say to people", "I analyze social interactions afterward", "I'm afraid of rejection",
+        "I avoid eye contact", "I feel like everyone is watching me", "I can't be myself around others",
+        "I'm always worried about saying the wrong thing", "Group conversations terrify me"
+      ],
+      "responses": [
+        "Social anxiety can make everyday interactions so challenging. What social situations are hardest for you? Understanding your specific triggers might help us develop targeted strategies.",
+        "That anxiety in social settings sounds difficult. What thoughts typically run through your mind before or during social interactions? Often addressing those thoughts is key.",
+        "Social anxiety is actually really common, even though it can feel like you're the only one struggling. What happens in your body when you feel anxious socially? Addressing physical symptoms can sometimes help.",
+        "Those social fears can be so isolating. What would you be doing differently if anxiety wasn't holding you back? Sometimes connecting with our values helps motivate us through the discomfort.",
+        "It takes courage to talk about social anxiety. Have you tried any strategies so far to manage these feelings? Sometimes small steps of gradual exposure can help build confidence over time."
+      ]
+    },
+    {
+      "tag": "health_anxiety",
+      "patterns": [
+        "I worry about my health constantly", "I think I have an undiagnosed illness", "I check my body for symptoms",
+        "I'm convinced something is wrong with me", "I research diseases online", "I'm afraid of getting sick",
+        "I think my doctors are missing something", "Every sensation makes me panic", "I'm afraid of dying",
+        "I get frequent health tests", "I worry about my symptoms", "I think I have cancer",
+        "I'm always at the doctor", "I worry about heart attacks", "My health anxiety is taking over",
+        "I catastrophize every symptom", "I believe I have whatever disease I read about", "I'm hyperaware of my body",
+        "I worry that pain means something serious", "I can't stop worrying about my health"
+      ],
+      "responses": [
+        "Health anxiety can be really distressing. How much time do you spend worrying about your health each day? Understanding the impact might help us address it more effectively.",
+        "That constant worry about health sounds exhausting. What typically happens when you notice a new sensation in your body? Breaking that cycle can be really helpful.",
+        "Health anxiety often involves a lot of 'what if' thinking. What health fears are most frequent for you? Sometimes addressing specific fears directly can help reduce their power.",
+        "The mind and body are so connected - anxiety about health can actually create physical sensations that reinforce the worry. What helps you feel safer when health worries arise?",
+        "Living with that level of health concern must be difficult. What reassurance do you typically seek when worried? Understanding your current coping patterns is a good place to start."
+      ]
+    },
+    {
+      "tag": "procrastination",
+      "patterns": [
+        "I always procrastinate", "I can't stop putting things off", "I wait until the last minute", "I avoid important tasks",
+        "I get distracted easily", "I can't focus on one thing", "I waste time", "I know what to do but don't do it",
+        "I make excuses to avoid work", "I feel paralyzed when facing big tasks", "I'm always behind on deadlines",
+        "I feel overwhelmed by my to-do list", "I can't get started on projects", "I prefer short-term rewards",
+        "I avoid difficult work", "My procrastination is hurting my life", "I feel guilty about procrastinating",
+        "I do easy tasks first", "I work well under pressure", "I leave everything to the last moment"
+      ],
+      "responses": [
+        "Procrastination is often about emotions, not time management. What feelings come up when you think about the tasks you're avoiding? Sometimes addressing those feelings helps break the cycle.",
+        "That procrastination pattern can be frustrating. What would help make getting started easier? Often breaking tasks down or creating a more appealing environment can help.",
+        "Procrastination happens to everyone sometimes. What are you procrastinating on right now? Sometimes talking through the specific task reveals what's making it difficult to start.",
+        "The guilt cycle with procrastination can make everything harder. What's one tiny step you could take on an important task? Sometimes just five minutes of work can break through the barrier.",
+        "Procrastination is rarely about laziness - it's usually about difficulty managing emotions around tasks. What strategies have you tried so far? Let's build on what's worked, even a little bit."
+      ]
+    },
+    {
+      "tag": "confidence_building",
+      "patterns": [
+        "I need more confidence", "How can I be more confident?", "I doubt myself constantly", "I'm insecure",
+        "I want to believe in myself", "I'm afraid to try new things", "I compare myself to others",
+        "I need more self-assurance", "I second-guess all my decisions", "How do I overcome self-doubt?",
+        "I need courage to make changes", "I'm afraid of failure", "I don't trust my abilities",
+        "I need to be more assertive", "I want to speak up more", "I feel inadequate",
+        "I want to stop seeking approval", "I need to trust my judgment", "How do I build self-confidence?",
+        "I want to feel good enough"
+      ],
+      "responses": [
+        "Building confidence is a journey, not an overnight change. What's one area where you'd like to feel more confident? Sometimes focusing on specific situations helps us make progress.",
+        "Self-doubt can be really challenging. What are your strengths - things you do well or qualities you like about yourself? Building confidence often starts with recognizing what's already working.",
+        "Confidence grows through action, even when we're scared. What's something small you could do that would push your comfort zone just a bit? Those small steps build over time.",
+        "That desire for more confidence makes a lot of sense. How do you talk to yourself when you're facing challenges? Our internal dialogue has a huge impact on how confident we feel.",
+        "Wanting more confidence is really common. What does confidence look like to you? Sometimes clarifying what we're actually aiming for helps us recognize progress when it happens."
+      ]
+    },
+    {
+      "tag": "gratitude_practices",
+      "patterns": [
+        "How do I practice gratitude?", "Benefits of gratitude", "Gratitude exercises", "Daily gratitude practice",
+        "How to feel more grateful", "Gratitude journaling ideas", "I want to appreciate life more",
+        "How can gratitude help depression?", "Gratitude meditation", "I want to focus on the positive",
+        "How to be more thankful", "Gratitude challenges", "I take things for granted",
+        "Morning gratitude routine", "How does gratitude improve mental health?", "Simple ways to practice gratitude",
+        "Gratitude when life is hard", "Finding gratitude in difficult times", "Family gratitude activities",
+        "Gratitude for better sleep"
+      ],
+      "responses": [
+        "Gratitude can be a powerful practice! Have you tried any gratitude exercises before? Even noticing one thing you appreciate each day can start shifting your perspective.",
+        "Practicing gratitude doesn't mean ignoring problems - it's about also seeing the good alongside difficulties. What's something small you appreciated today? Sometimes starting simple helps build the habit.",
+        "Gratitude practices can take many forms - journaling, sharing with others, silent reflection. What approach sounds most appealing to you? The best practice is one you'll actually do consistently.",
+        "Research shows gratitude can actually rewire our brains over time! What would you hope to gain from a gratitude practice? Having clear intentions can help motivate consistent practice.",
+        "Gratitude can be especially powerful when life is challenging. What's one small thing that went well today or something you're thankful for? Sometimes tiny moments of appreciation add up."
+      ]
+    },
+    {
+      "tag": "boundaries",
+      "patterns": [
+        "I need to set boundaries", "People take advantage of me", "I can't say no", "I'm too nice",
+        "I feel guilty setting boundaries", "How do I enforce boundaries?", "I always put others first",
+        "I'm afraid people will be mad if I set boundaries", "I don't know what my boundaries are",
+        "I feel selfish setting limits", "I'm a people pleaser", "I feel responsible for others' feelings",
+        "How do I say no without feeling guilty?", "I'm afraid of conflict when setting boundaries",
+        "My boundaries get ignored", "I don't want to hurt people's feelings", "I get resentful but don't speak up",
+        "I'm too available to others", "I need personal space", "I let people walk all over me"
+      ],
+      "responses": [
+        "Setting boundaries is an act of self-care, not selfishness. What situation do you find it hardest to set limits in? Understanding specific challenges helps us address them more effectively.",
+        "That difficulty with boundaries is really common. What happens when you try to set a boundary? Sometimes the discomfort is temporary but the benefits are lasting.",
+        "Learning to set healthy boundaries takes practice. What's one small boundary you could try setting this week? Starting with lower-stakes situations can help build confidence.",
+        "People-pleasing and boundary struggles often go hand in hand. What fears come up when you think about setting limits? Understanding those fears can help us address them directly.",
+        "Setting boundaries often feels uncomfortable before it feels empowering. What would clearer boundaries make possible in your life? Connecting with that motivation can help push through the discomfort."
+      ]
+    },
+    {
+      "tag": "life_purpose",
+      "patterns": [
+        "I don't know my purpose", "I feel my life has no meaning", "How do I find my purpose?", "I'm searching for meaning",
+        "I feel directionless", "What's the point of life?", "I need a sense of purpose", "Life feels meaningless",
+        "I want my life to matter", "I'm having an existential crisis", "How do I find my passion?",
+        "I don't know what I want in life", "I feel like I'm just existing", "I want to make a difference",
+        "How do I know my calling?", "I need direction in life", "I want to find fulfillment",
+        "I feel like I'm wasting my potential", "I want my life to have impact", "How do I create meaning in life?"
+      ],
+      "responses": [
+        "Those big questions about purpose are really important. What activities make you lose track of time? Sometimes our natural interests point toward what gives us meaning.",
+        "Looking for meaning is a deeply human quest. What values matter most to you? Purpose often emerges from living in alignment with our core values.",
+        "That search for purpose can feel both exciting and overwhelming. What positive impact would you like to have on others or the world? Purpose often connects to contribution.",
+        "Those existential questions are actually a sign of depth. What gives you a sense of meaning, even in small ways? Sometimes purpose is built through many small meaningful actions rather than one grand calling.",
+        "Finding purpose is usually a journey, not a sudden discovery. What issues or causes stir emotion in you? Our emotional responses often point toward what matters most to us."
+      ]
+    }
+  ]
+}
